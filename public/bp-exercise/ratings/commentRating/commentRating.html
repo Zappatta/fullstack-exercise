@@ -1,0 +1,16 @@
+<div class="comment-rating">
+
+    <div class="rating-labels">
+        <span class="label avg-label">average user rating:</span>
+        <span class="label your-label">your rating</span>
+    </div>
+
+
+    <div ng-class="'stars highlight_'+ $ctrl.displayedRating" ng-mouseleave="$ctrl.onStarOut()" ng-click="$ctrl.sendRating()">
+        <i class="fa fa-star" aria-hidden="true" ng-mouseover="$ctrl.onStarOver(1)" ></i>
+        <i class="fa fa-star" aria-hidden="true" ng-mouseover="$ctrl.onStarOver(2)" ></i>
+        <i class="fa fa-star" aria-hidden="true" ng-mouseover="$ctrl.onStarOver(3)" ></i>
+        <i class="fa fa-star" aria-hidden="true" ng-mouseover="$ctrl.onStarOver(4)" ></i>
+        <i class="fa fa-star" aria-hidden="true" ng-mouseover="$ctrl.onStarOver(5)" ></i>
+    </div>
+</div>
